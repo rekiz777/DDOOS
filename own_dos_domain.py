@@ -51,6 +51,7 @@ for _ in range(THREADS):
     threading.Thread(target=killer, daemon=True).start()
 
 while time.time() - start < DURATION:
-    time.sleep(1)
+    time.sleep(5)
+
 
 print("[+] Test selesai.")
